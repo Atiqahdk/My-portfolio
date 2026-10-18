@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a Network Computing student at UNIMAS.">
+  <title>My Portfolio | UNIMAS Network Computing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="MyPortfolio home">MyPortfolio<span>.</span></a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span aria-hidden="true" class="menu-icon">☰</span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+        <span aria-hidden="true" id="theme-icon">☾</span>
+        <span id="theme-label">Dark mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+          <h1 id="home-title">Hi, I'm a <span>Network Computing Student at UNIMAS.</span></h1>
+          <p class="hero-description">
+            I am studying Network Computing at Universiti Malaysia Sarawak (UNIMAS).
+            I am passionate about learning computer networking, network configuration, troubleshooting and information technology.
+            I aim to strengthen my technical skills and gain practical experince in thhe IT industry.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#projects">View My Projects</a>
+            <a class="button button-outline" href="#contact">Contact Me</a>
+          </div>
+          <p class="small-note">Learning today, building my IT career for tomorrow.</p>
+        </div>
+
+        <div class="hero-card" aria-label="Portfolio focus areas">
+          <div class="hero-card-icon" aria-hidden="true">⌘</div>
+          <p class="card-kicker">MY FIELD OF STUDY</p>
+          <h2>Network Computing</h2>
+          <p>Learning how computer networks work, configuring network devices, and troubleshooting technical issues.</p>
+          <div class="skill-pills">
+            <span>Networking</span><span>Troubleshooting</span><span>Programming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'VE BEEN LEARNING</p>
+          <h2 id="projects-title">My Projects</h2>
+          <p>Here some of the projects and practical skills I have developed throughout my studies.</p>
+        </div>
+
+        <div class="filter-controls" aria-label="Filter projects">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="networking" aria-pressed="false">Networking</button>
+          <button class="filter-button" type="button" data-filter="programming" aria-pressed="false">Programming</button>
+          <button class="filter-button" type="button" data-filter="database" aria-pressed="false">Database</button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card" data-category="networking">
+            <div class="project-number" aria-hidden="true">01</div>
+            <p class="project-category">NETWORKING</p>
+            <h3>Network Design and Configuration</h3>
+            <p>A practice project exploring network topologies, IP addressing, router configuration, and connectivity testing.</p>
+            <p class="project-skills"><strong>Skills:</strong> IP addressing, network devices, troubleshooting</p>
+          </article>
+
+          <article class="project-card" data-category="programming">
+            <div class="project-number" aria-hidden="true">02</div>
+            <p class="project-category">PROGRAMMING</p>
+            <h3>Cache Simulator in C</h3>
+            <p>A programming project that can simulate cache memory and compares replacement strategies such as LRU, FIFO and Random.</p>
+            <p class="project-skills"><strong>Skills:</strong> C, file handling, algorithms</p>
+          </article>
+
+          <article class="project-card" data-category="database">
+            <div class="project-number" aria-hidden="true">03</div>
+            <p class="project-category">DATABASE</p>
+            <h3>Database Management System</h3>
+            <p>A database project involving relational table design, entity relationships, SQL queries and transaction management.</p>
+            <p class="project-skills"><strong>Skills:</strong> SQL, ERD, database design</p>
+          </article>
+
+          <article class="project-card" data-category="programming">
+            <div class="project-number" aria-hidden="true">04</div>
+            <p class="project-category">PROGRAMMING</p>
+            <h3>Object-Oriented Programming</h3>
+            <p>A C++ project that applied object-oriented programming concept to a student vehicle rental system using classes, contructors, attributes and member functions.</p>
+            <p class="project-skills"><strong>Skills:</strong> C++, classes, encapsulation</p>
+          </article>
+
+          <article class="project-card" data-category="networking">
+            <div class="project-number" aria-hidden="true">05</div>
+            <p class="project-category">NETWORKING</p>
+            <h3>Network Diagnostic Toolkit</h3>
+            <p>A practical networking exercise using comand-line tools to check network settings, test connectivity and trace network routes.</p>
+            <p class="project-skills"><strong>Skills:</strong> ping, ipconfig, tracert</p>
+          </article>
+        </div>
+        <p class="filter-status" id="filter-status" aria-live="polite">Showing all 5 projects.</p>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2 id="about-title">About Me</h2>
+          <p>
+            I am a Network Computing student at the Faculty of Computer Science and Information Technology,
+            Universiti Malaysia Sarawak (UNIMAS). Through my studies, I am developing my knowledge of computer
+            networks, programming, databases, and IT troubleshooting.
+          </p>
+          <p>
+            I am eager to improve my practical skills through academic projects and hands-on learning.
+            I look forward to gaining industry experience through an internship and developing my career
+            in networking, IT infrastructure and technical support.
+          </p>
+        </div>
+
+        <div class="about-panel">
+          <h3>Education</h3>
+          <p class="about-label">UNIVERSITI MALAYSIA SARAWAK (UNIMAS)</p>
+          <p>Network Computing</p>
+          <p class="muted">Faculty of Computer Science and Information Technology</p>
+          <hr>
+          <h3>Skills I'm developing</h3>
+          <ul class="skill-list">
+            <li>Computer networking fundamentals</li>
+            <li>Network configuration and troubleshooting</li>
+            <li>HTML and CSS</li>
+            <li>C / C++ and Python programming</li>
+            <li>SQL and database management</li>
+            <li>Teamwork and problem-solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2 id="contact-title">Contact Me</h2>
+          <p>I welcome opportunities to learn, collaborate on student projects and connect with others in networking and IT.
+            I am also looking forward to gain experience through an internship.
+          </p>
+          <!-- Replace the example email address with your own before publishing. -->
+          <a class="email-link" href="mailto:atiqahmasapar55@gmail.com">atiqahmasapar55@gmail.com</a>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-field">
+            <label for="visitor-name">Your name</label>
+            <input id="visitor-name" name="visitorName" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="visitor-email">Your email</label>
+            <input id="visitor-email" name="visitorEmail" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="visitor-message">Message</label>
+            <textarea id="visitor-message" name="visitorMessage" rows="4" required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Check Message</button>
+          <p class="form-status" id="form-status" aria-live="polite">
+            Demo form only: it checks the fields but does not send or store messages.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> MyPortfolio | UNIMAS Network Computing Student.</p>
+      <button class="back-to-top" id="back-to-top" type="button">Back to top ↑</button>
+    </div>
+  </footer>
+</body>
+</html>
